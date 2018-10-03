@@ -1,0 +1,72 @@
+.timer {
+    min-height: 85%;
+    min-width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer__display {
+    min-height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: rgb(255, 240, 236);
+    font-size: 3rem;
+    font-weight: 700;
+
+    text-shadow: 0 0 4px rgba(38, 27, 12, 1);
+}
+
+.timer__controls {
+    min-height: 20%;
+    min-width: 100%;;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.timer__btn {
+    display: flex;
+    flex-direction: column;
+
+    background: none;
+
+    border: 0;
+
+    color: rgba(255, 214, 204, 1);
+    font-size: 1.2rem;
+    font-weight: 700;  
+    text-shadow: 0 0 2px rgb(27, 19, 9);
+
+    cursor: pointer;
+
+    transition: all .25s;
+}
+
+.timer__btn i {
+    font-size: 2rem;
+}
+
+.timer__btn:hover {
+    color: rgb(255, 247, 245);
+}
+
+@media only screen and (min-width: 576px) {
+    .timer__display {
+        font-size: 6rem;
+    }
+
+    .timer__btn {
+        font-size: 1.5rem;
+    }
+
+    .timer__btn i {
+        font-size: 50px;
+    }
+}
