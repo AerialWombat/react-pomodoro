@@ -77,6 +77,8 @@ class App extends Component {
     const currentMin = Math.floor(this.state.timeRemaining / 60000);
     const currentSec = (this.state.timeRemaining - (currentMin * 60000)) / 1000;
 
+    document.title = `(${currentMin}:${String(currentSec).padStart(2, '0')}) Pomodoro`
+
     this.setState({
       timeRemaining: timerLeft,
       minutes: currentMin,
