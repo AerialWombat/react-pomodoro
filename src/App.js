@@ -7,7 +7,6 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      //Maybe change to different data type to track
       timerType: 'pomodoro',
       isTimerOn: false,
       timeRemaining: 1500000,
